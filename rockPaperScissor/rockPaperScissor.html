@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>  
+    <div class="contains">
+      <p class="p1"> Rock Paper Scissors</p>
+      <button class="circle" onclick="
+        playGame('rock');
+      "> ✊</button>
+      <button class="circle" onclick="
+        playGame('paper');
+        " > 🖐️</button>
+      <button class="circle" onclick="
+        playGame('scissor');
+        "> ✌️</button>
+
+      
+      <p class="picks"></p>
+
+      <p class="result"></p>
+
+      <p class="data"> wins: 0, losses: 0 , ties: 0</p>
+
+      <button class="reset" onclick="
+      document.querySelector('.data').innerHTML ='wins: 0 , losses: 0,  ties: 0';
+      score.wins = 0;
+      score.loss = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      ">Reset Score</button>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>
